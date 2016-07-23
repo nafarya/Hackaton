@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hackaton</string>
+    <string name="settings">settings</string>
+    <string name="cards">Карточки</string>
+    <string name="wordsSpeaking">Проговаривание слов</string>
+    <string name="listenToWords">Слово на слух</string>
+    <string name="searchForPair">Поиск пары</string>
+    <string name="createWord">Составление слова</string>
+    <string name="trueFalse">Верно - Неверно</string>
+    <string name="selectionOfTranslation">Выбор перевода</string>
+    <string name="translateByPic">Перевод по картинке</string>
+    <string name="makeAccordance">Установи соответствие</string>
+    <string name="test">test</string>
+    <string name="pick_game">Выберите режим</string>
+</resources>
