@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.dan.hackaton.lang.WordStorage;
+
 import butterknife.BindView;
 
 public class MainActivity extends AppCompatActivity{
@@ -19,7 +21,7 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
+        WordStorage.init(getApplicationContext());
         getSupportActionBar().setTitle(getResources().getString(R.string.pick_game));
 
 

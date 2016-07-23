@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
 
@@ -12,23 +14,215 @@
         android:text="@string/makeAccordance"
         android:layout_gravity="center_horizontal"/>
 
-    <GridLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_horizontal">
+        android:layout_height="match_parent">
 
-        <ListView
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/listView1"
-            />
-        <ListView
-            android:layout_width="170dp"
-            android:layout_height="match_parent"
-            android:id="@+id/listView2"
-            >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:id="@+id/center"
+                android:layout_centerHorizontal="true">
+            </View>
 
 
-        </ListView>
-    </GridLayout>
-</LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_toLeftOf="@+id/center"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card0">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId0"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/center"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card1">>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId1"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toLeftOf="@+id/center"
+                android:layout_below="@+id/card0"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card2">>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId2"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/center"
+                android:layout_below="@+id/card1"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card3">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId3"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/center"
+                android:layout_below="@+id/card3"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card5">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId5"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/center"
+                android:layout_below="@+id/card5"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card7">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId7"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/center"
+                android:layout_below="@+id/card7"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card9">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId9"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toRightOf="@+id/center"
+                android:layout_below="@+id/card9"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card11">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId11"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toLeftOf="@+id/center"
+                android:layout_below="@+id/card2"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card4">>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId4"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toLeftOf="@+id/center"
+                android:layout_below="@+id/card4"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card6">>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId6"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toLeftOf="@+id/center"
+                android:layout_below="@+id/card6"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card8">>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId8"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_toLeftOf="@+id/center"
+                android:layout_below="@+id/card8"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/card10">>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:id="@+id/cardsButtonId10"
+                    android:background="#fafafa"
+                    android:text="@string/cards"/>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+  </LinearLayout>
